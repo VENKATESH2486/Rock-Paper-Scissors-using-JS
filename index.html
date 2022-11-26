@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title> Rock, Paper, Scissors</title>
+</head>
+<body>
+
+  <!-- <img src="./images/favicon-32x32.png" alt=""> -->
+
+  <div class="scoreBoard">
+
+    <div class="gameTitle">
+      <h1> ROCK</h1>
+      <H1>PAPER</H1>
+      <h1>SCISSORS</h1>
+    </div>
+
+    <div class="scores">
+      <span class="score">
+        <h4>Your score</h4>
+        <h1 id="userScore">0</h1>
+      </span>
+      <span class="score">
+        <h4>Opponent score</h4>
+        <h1 id="computerScore">0</h1>
+      </span>
+    </div>
+
+  </div>
+  <br>
+
+  <div id="phase1" class="show">
+    <div id="box1">
+      <img src="./images/bg-triangle.svg" alt="">
+      <button class="choice_rock" id="rockBtn"></button>
+      <button class="choice_paper" id="paperBtn"></button>
+      <button class="choice_scissors" id="scissorsBtn"></button>
+    </div>
+  </div>
+
+
+  <div id="phase2" class="unshow">
+
+    <div id="box2">
+      <div class="yourSide">
+        <h2>You Picked</h2><br><br>
+        <div id="yourOpt" class="choiceScissors"></div>
+        <div id="userWon" class="unshow">WON</div>
+      </div>
+      <div class="resultDisplay">
+        <h1 id="result">HELLO</h1>
+        <button id="playAgain">Play Again</button>
+      </div>
+      <div class="computerSide">
+        <h2>Opponent Picked</h2><br><br>
+        <div id="computerOpt"></div>
+        <div id="compWon" class="unshow">WON</div>
+      </div>
+    </div>
+    
+  </div>
+
+  <button id="rulesBtn"><h3>Rules</h3></button>
+
+  <div id="rulesPic" class="unshow">
+    <div class="rulesHeader">
+      <h1>RULES</h1>
+      <img id="hideRules" src="./images/icon-close.svg" alt="">
+    </div>
+    <img src="./images/image-rules.svg" alt="">
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
+
+
+<!-- 
+Score
+Rules
+
+You Picked
+The House Picked
+
+You Win
+You Lose
+
+Play Again -->
